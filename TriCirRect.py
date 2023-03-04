@@ -33,6 +33,17 @@ def main():
     window.setWidth(a)
     window.draw(win)
 
+    circle = Circle(Point(450, 320), 40)
+    circle.setWidth(3)
+    circle.setOutline("yellow")
+    circle.setFill("red")
+    circle.draw(win)
+
+    img = Image(Point(200,200),"i.png")
+
+    img.draw(win)
+
+
     win.getMouse()
     win.close()
 
